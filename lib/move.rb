@@ -9,16 +9,16 @@ end
 board= [" ", " ", " ", " ", " ", " ", " ", " ", " ",]
 display_board(board)
 
+# code your input_to_index and move method here!
 
-puts "Where would you like to go?"
-board= [" ", " ", " ", " ", " ", " ", " ", " ", " ",]
-display_board(board)
+def input_to_index(user_input)
+  user_input.to_i - 1
 end
 
-def input_to_index
-move = gets.strip
-token = "X"
-board[position.to_i-1] = token
+def move(board, position, char='X')
+  board[position] = char
 end
+
+
 
 # code your input_to_index and move method here!
